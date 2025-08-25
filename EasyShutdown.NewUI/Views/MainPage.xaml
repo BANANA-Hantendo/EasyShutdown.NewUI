@@ -1,0 +1,34 @@
+﻿<Page
+	x:Class="EasyShutdown.NewUI.Views.MainPage"
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d">
+
+    <Grid x:Name="ContentArea">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <TextBlock
+			Grid.Row="0"
+			x:Uid="Main_Title"
+			Style="{StaticResource PageTitleStyle}" />
+
+        <TextBlock
+			Grid.Row="1"
+			Text="操作を選択してください。シャットダウンしたいなら。"
+			Margin="{StaticResource MediumTopBottomMargin}"
+			TextWrapping="Wrap" />
+
+        <Button Grid.Row="2" HorizontalAlignment="Stretch" Style="{StaticResource AccentButtonStyle}">
+            今すぐシャットダウン
+        </Button>
+        <Button Grid.Row="3" HorizontalAlignment="Stretch">
+            今すぐ再起動
+        </Button>
+
+    </Grid>
+</Page>

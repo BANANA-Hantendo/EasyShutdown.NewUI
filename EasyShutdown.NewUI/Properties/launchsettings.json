@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "EasyShutdown.NewUI (Package)": {
+        "commandName": "MsixPackage"
+      },
+      "EasyShutdown.NewUI (Unpackaged)": {
+        "commandName": "Project"
+      }
+    }
+}
